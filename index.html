@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Gold & Floral Profile Hub - GitHub Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Outfit:wght@300;400;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-background"></div>
+    <div class="floating-sparkles"></div>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="gold-text">✦</span> <span class="brand-title">Elegance Profile</span> <span class="gold-text">✦</span>
+        </div>
+        <nav>
+            <a href="#snake-section" class="nav-btn">🌸 Rose Snake</a>
+            <a href="#pacman-section" class="nav-btn">🎀 Pearl Pacman</a>
+            <a href="#readme-section" class="nav-btn highlight">✨ README Code</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="badge-pill">✨ ELEGANT & FEMININE PROFILE HUB</div>
+            <h1 class="hero-title">Soft Aesthetics & Arcade Games</h1>
+            <p class="hero-subtitle">Tampilan GitHub Profile yang Feminim, Elegant, dan Interactive</p>
+            <div class="hero-buttons">
+                <a href="#snake-section" class="btn btn-primary">Play Arcade Games</a>
+                <a href="#readme-section" class="btn btn-secondary">Copy Profile Markdown</a>
+            </div>
+        </section>
+
+        <!-- Arcade Games Section -->
+        <div class="games-grid">
+            <!-- Snake Game -->
+            <section id="snake-section" class="game-card">
+                <div class="card-header">
+                    <h2 class="card-title">🌸 ROSE SNAKE</h2>
+                    <div class="score-board">
+                        <span>SCORE: <strong id="snake-score">0</strong></span>
+                        <span>BEST: <strong id="snake-high">0</strong></span>
+                    </div>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="snakeCanvas" width="400" height="400"></canvas>
+                    <div id="snake-overlay" class="game-overlay">
+                        <h3>ROSE SNAKE</h3>
+                        <p>Kumpulkan Kelopak Mawar & Raih Skor Tertinggi 🌸</p>
+                        <button id="start-snake-btn" class="btn btn-primary">START GAME</button>
+                    </div>
+                </div>
+                <div class="game-controls">
+                    <button class="ctrl-btn" id="s-up">▲</button>
+                    <div class="horizontal-ctrls">
+                        <button class="ctrl-btn" id="s-left">◀</button>
+                        <button class="ctrl-btn" id="s-down">▼</button>
+                        <button class="ctrl-btn" id="s-right">▶</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pacman Game -->
+            <section id="pacman-section" class="game-card">
+                <div class="card-header">
+                    <h2 class="card-title">🎀 PEARL PACMAN</h2>
+                    <div class="score-board">
+                        <span>SCORE: <strong id="pacman-score">0</strong></span>
+                        <span>LIVES: <strong id="pacman-lives">3</strong></span>
+                    </div>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="pacmanCanvas" width="400" height="400"></canvas>
+                    <div id="pacman-overlay" class="game-overlay">
+                        <h3>PEARL PACMAN</h3>
+                        <p>Kumpulkan Mutiara & Hindari Spirit Manis 💖</p>
+                        <button id="start-pacman-btn" class="btn btn-primary">START GAME</button>
+                    </div>
+                </div>
+                <div class="game-controls">
+                    <button class="ctrl-btn" id="p-up">▲</button>
+                    <div class="horizontal-ctrls">
+                        <button class="ctrl-btn" id="p-left">◀</button>
+                        <button class="ctrl-btn" id="p-down">▼</button>
+                        <button class="ctrl-btn" id="p-right">▶</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- GitHub Profile README Generator Section -->
+        <section id="readme-section" class="readme-container">
+            <div class="section-badge">✨ FEMININE & ELEGANT PROFILE README</div>
+            <h2>Salin Kode Markdown Ini Untuk GitHub Anda</h2>
+            <p class="section-desc">
+                Kode Markdown bernuansa Rose Gold & Soft Pink di bawah ini sudah siap dipasang di repository <strong>diantamela/diantamela</strong>.
+            </p>
+
+            <div class="code-box-wrapper">
+                <div class="code-header">
+                    <span>README.md (Rose Gold & Soft Pink Theme)</span>
+                    <button id="copy-readme-btn" class="btn-copy">📋 Copy Markdown</button>
+                </div>
+                <pre><code id="readme-code">&lt;p align="center"&gt;
+  &lt;img src="https://capsule-render.vercel.app/api?type=waving&amp;color=ffb6c1&amp;height=200&amp;section=header&amp;text=Hi,%20I'm%20Dian%20Tamela%20✨&amp;fontSize=40&amp;fontColor=5c2a38&amp;animation=fadeIn" alt="Header Banner" /&gt;
+&lt;/p&gt;
+
+&lt;p align="center"&gt;
+  &lt;a href="https://git.io/typing-svg"&gt;
+    &lt;img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&amp;weight=600&amp;size=24&amp;duration=3000&amp;pause=1000&amp;color=FF70A6&amp;center=true&amp;vCenter=true&amp;width=600&amp;height=50&amp;lines=Software+Developer+%26+Creative+Mind+🌸;Crafting+Modern+Web+Experiences+%26+Code;Passionate+About+Technology+%26+Design" alt="Typing SVG" /&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align="center"&gt;
+  ✨ 🌸 💖 🎀 💖 🌸 ✨
+&lt;/p&gt;
+
+---
+
+### 🎮 PLAY ARCADE GAMES ON MY PROFILE!
+&gt; 💖 **[🕹️ Klik Di Sini Untuk Bermain Pacman &amp; Snake Online](https://diantamela.github.io/diantamela/)**
+
+---
+
+### 🐍 CONTRIBUTION SNAKE ANIMATION
+&lt;p align="center"&gt;
+  &lt;img src="https://raw.githubusercontent.com/diantamela/diantamela/output/github-contribution-grid-snake.svg" alt="Snake Animation" /&gt;
+&lt;/p&gt;
+
+---
+
+### 🌸 TECH STACK &amp; CREATIVE TOOLS
+&lt;p align="center"&gt;
+  &lt;img src="https://skillicons.dev/icons?i=py,js,html,css,react,nextjs,postgres,docker,figma,git,github,vscode&amp;theme=light" alt="Tech Stack" /&gt;
+&lt;/p&gt;
+
+---
+
+### 🎀 GITHUB METRICS &amp; STATS
+&lt;p align="center"&gt;
+  &lt;img height="180" src="https://github-readme-stats.vercel.app/api?username=diantamela&amp;show_icons=true&amp;theme=rose_pine&amp;hide_border=true&amp;count_private=true" alt="GitHub Stats" /&gt;
+  &lt;img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=diantamela&amp;layout=compact&amp;theme=rose_pine&amp;hide_border=true" alt="Top Languages" /&gt;
+&lt;/p&gt;
+
+&lt;p align="center"&gt;
+  &lt;img src="https://github-readme-streak-stats.herokuapp.com/?user=diantamela&amp;theme=rose_pine&amp;hide_border=true" alt="Streak Stats" /&gt;
+&lt;/p&gt;
+
+---
+
+### 💌 CONNECT WITH ME
+&lt;p align="center"&gt;
+  &lt;a href="https://linkedin.com/in/diantamela" target="_blank"&gt;
+    &lt;img src="https://img.shields.io/badge/LinkedIn-E0A96D?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /&gt;
+  &lt;/a&gt;
+  &lt;a href="mailto:diantamela@example.com"&gt;
+    &lt;img src="https://img.shields.io/badge/Email-FF70A6?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email" /&gt;
+  &lt;/a&gt;
+  &lt;a href="https://instagram.com/diantamela" target="_blank"&gt;
+    &lt;img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" alt="Instagram" /&gt;
+  &lt;/a&gt;
+&lt;/p&gt;</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Crafted with 🌸 Elegance & Rose Gold Aesthetics for GitHub Profile</p>
+    </footer>
+
+    <script src="snake.js"></script>
+    <script src="pacman.js"></script>
+    <script>
+        document.getElementById('copy-readme-btn').addEventListener('click', () => {
+            const code = document.getElementById('readme-code').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.getElementById('copy-readme-btn');
+                btn.innerText = '✨ Copied!';
+                setTimeout(() => { btn.innerText = '📋 Copy Markdown'; }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
