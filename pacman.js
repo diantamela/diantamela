@@ -1,4 +1,4 @@
-// Pearl Pacman Engine - Feminine Pastel Theme
+// Amber Pacman Engine - Dark Espresso Theme
 const pCanvas = document.getElementById('pacmanCanvas');
 const pCtx = pCanvas.getContext('2d');
 
@@ -49,10 +49,10 @@ function initPacmanGame() {
     map = JSON.parse(JSON.stringify(baseMap));
     pacman = { x: 9, y: 13, dx: 0, dy: 0, nextDx: 0, nextDy: 0, mouth: 0.2, mouthSpeed: 0.05 };
     ghosts = [
-        { x: 9, y: 8, color: '#c77dff', dx: 1, dy: 0 },
-        { x: 10, y: 8, color: '#ff85a1', dx: -1, dy: 0 },
-        { x: 9, y: 9, color: '#a8edd5', dx: 0, dy: -1 },
-        { x: 10, y: 9, color: '#ffbc9a', dx: 0, dy: 1 }
+        { x: 9, y: 8, color: '#d4a373', dx: 1, dy: 0 },
+        { x: 10, y: 8, color: '#e09f67', dx: -1, dy: 0 },
+        { x: 9, y: 9, color: '#a3b18a', dx: 0, dy: -1 },
+        { x: 10, y: 9, color: '#dda15e', dx: 0, dy: 1 }
     ];
     pScore = 0;
     pLives = 3;
@@ -178,7 +178,7 @@ function endPacmanGame(title) {
 }
 
 function drawPacmanGame() {
-    pCtx.fillStyle = '#0d0814';
+    pCtx.fillStyle = '#0f0a06';
     pCtx.fillRect(0, 0, pCanvas.width, pCanvas.height);
 
     for (let r = 0; r < ROWS; r++) {
@@ -186,9 +186,9 @@ function drawPacmanGame() {
             const tile = map[r][c];
             if (tile === 1) {
                 pCtx.shadowBlur = 4;
-                pCtx.shadowColor = '#e0a96d';
-                pCtx.fillStyle = '#23162b';
-                pCtx.strokeStyle = 'rgba(224, 169, 109, 0.4)';
+                pCtx.shadowColor = '#d4a373';
+                pCtx.fillStyle = '#2d2018';
+                pCtx.strokeStyle = 'rgba(212, 163, 115, 0.4)';
                 pCtx.fillRect(c * TILE, r * TILE, TILE, TILE);
                 pCtx.strokeRect(c * TILE, r * TILE, TILE, TILE);
             } else if (tile === 0) {
@@ -200,8 +200,8 @@ function drawPacmanGame() {
                 pCtx.fill();
             } else if (tile === 2) {
                 pCtx.shadowBlur = 10;
-                pCtx.shadowColor = '#ff70a6';
-                pCtx.fillStyle = '#ff70a6';
+                pCtx.shadowColor = '#faedcd';
+                pCtx.fillStyle = '#faedcd';
                 pCtx.beginPath();
                 pCtx.arc(c * TILE + TILE / 2, r * TILE + TILE / 2, 6, 0, Math.PI * 2);
                 pCtx.fill();
@@ -210,8 +210,8 @@ function drawPacmanGame() {
     }
 
     pCtx.shadowBlur = 12;
-    pCtx.shadowColor = '#ff70a6';
-    pCtx.fillStyle = '#ff70a6';
+    pCtx.shadowColor = '#ffe6a7';
+    pCtx.fillStyle = '#ffe6a7';
     pCtx.beginPath();
     let angle = 0;
     if (pacman.dx === 1) angle = 0;
@@ -231,8 +231,8 @@ function drawPacmanGame() {
 
     ghosts.forEach(g => {
         pCtx.shadowBlur = 10;
-        pCtx.shadowColor = scaredTimer > 0 ? '#ffb6c1' : g.color;
-        pCtx.fillStyle = scaredTimer > 0 ? '#ffb6c1' : g.color;
+        pCtx.shadowColor = scaredTimer > 0 ? '#faedcd' : g.color;
+        pCtx.fillStyle = scaredTimer > 0 ? '#faedcd' : g.color;
 
         pCtx.beginPath();
         pCtx.arc(g.x * TILE + TILE / 2, g.y * TILE + TILE / 3, TILE / 2 - 2, Math.PI, 0, false);
@@ -240,7 +240,7 @@ function drawPacmanGame() {
         pCtx.lineTo(g.x * TILE + 2, g.y * TILE + TILE);
         pCtx.fill();
 
-        pCtx.fillStyle = '#fff';
+        pCtx.fillStyle = '#1a120c';
         pCtx.beginPath();
         pCtx.arc(g.x * TILE + 6, g.y * TILE + 6, 2.5, 0, Math.PI * 2);
         pCtx.arc(g.x * TILE + 14, g.y * TILE + 6, 2.5, 0, Math.PI * 2);

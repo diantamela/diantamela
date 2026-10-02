@@ -1,4 +1,4 @@
-// Rose Gold & Soft Pink Snake Engine
+// Espresso & Dark Brown Snake Engine
 const canvas = document.getElementById('snakeCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -10,7 +10,7 @@ let food = { x: 15, y: 15 };
 let dx = gridSize;
 let dy = 0;
 let score = 0;
-let highScore = localStorage.getItem('rose_snake_high_score') || 0;
+let highScore = localStorage.getItem('espresso_snake_high_score') || 0;
 let gameInterval = null;
 let isRunning = false;
 
@@ -69,7 +69,7 @@ function moveSnake() {
         scoreEl.innerText = score;
         if (score > highScore) {
             highScore = score;
-            localStorage.setItem('rose_snake_high_score', highScore);
+            localStorage.setItem('espresso_snake_high_score', highScore);
             document.getElementById('snake-high').innerText = highScore;
         }
         spawnFood();
@@ -90,10 +90,10 @@ function checkCollision() {
 }
 
 function draw() {
-    ctx.fillStyle = '#0d0814';
+    ctx.fillStyle = '#0f0a06';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.strokeStyle = 'rgba(255, 182, 193, 0.05)';
+    ctx.strokeStyle = 'rgba(212, 163, 115, 0.08)';
     for (let x = 0; x < canvas.width; x += gridSize) {
         ctx.beginPath();
         ctx.moveTo(x, 0);
@@ -107,22 +107,24 @@ function draw() {
         ctx.stroke();
     }
 
+    // Food (Coffee Bean / Amber Pearl)
     ctx.shadowBlur = 15;
-    ctx.shadowColor = '#e0a96d';
-    ctx.fillStyle = '#e0a96d';
+    ctx.shadowColor = '#d4a373';
+    ctx.fillStyle = '#faedcd';
     ctx.beginPath();
     ctx.arc(food.x + gridSize / 2, food.y + gridSize / 2, gridSize / 2 - 2, 0, Math.PI * 2);
     ctx.fill();
 
+    // Snake (GitHub contribution green / warm bronze)
     snake.forEach((part, index) => {
         if (index === 0) {
             ctx.shadowBlur = 15;
-            ctx.shadowColor = '#ff70a6';
-            ctx.fillStyle = '#ff70a6';
+            ctx.shadowColor = '#388e3c';
+            ctx.fillStyle = '#4caf50';
         } else {
             ctx.shadowBlur = 6;
-            ctx.shadowColor = '#ffb6c1';
-            ctx.fillStyle = 'rgba(255, 182, 193, ' + (1 - index / snake.length * 0.5) + ')';
+            ctx.shadowColor = '#2e7d32';
+            ctx.fillStyle = index % 2 === 0 ? '#388e3c' : '#2e7d32';
         }
         ctx.fillRect(part.x + 1, part.y + 1, gridSize - 2, gridSize - 2);
     });
