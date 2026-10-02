@@ -47,13 +47,13 @@
 
 ### 💌 CONNECT WITH ME
 <p align="center">
-  <a href="https://linkedin.com/in/diantamela" target="_blank">
+  <a href="https://linkedin.com/in/syafrilla diantamela" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-E0A96D?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:diantamela@example.com">
+  <a href="mailto:tameladian@gmail.com">
     <img src="https://img.shields.io/badge/Email-FF70A6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://instagram.com/diantamela" target="_blank">
+  <a href="https://instagram.com/syfrll_dian" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
 </p>
