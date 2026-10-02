@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=3D2314&height=200&section=header&text=Hi,%20I'm%20Dian%20Tamela%20⭐&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=ffb6c1&height=200&section=header&text=Hi,%20I'm%20Dian%20Tamela%20✨&fontSize=40&fontColor=5c2a38&animation=fadeIn" alt="Header Banner" />
 </p>
 
 <p align="center">
@@ -42,12 +42,12 @@
 ### 💌 CONNECT WITH ME
 <p align="center">
   <a href="https://linkedin.com/in/diantamela" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-3D2314?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-E0A96D?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:diantamela@example.com">
-    <img src="https://img.shields.io/badge/Email-5C3A21?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-FF70A6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <a href="https://instagram.com/diantamela" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-8B5A2B?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
 </p>
