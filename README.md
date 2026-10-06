@@ -29,11 +29,6 @@
 
 ### 📊 GITHUB METRICS & STATS
 <p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=diantamela&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=diantamela&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
-</p>
-
-<p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=diantamela&theme=dark&hide_border=true" alt="Streak Stats" />
 </p>
 
